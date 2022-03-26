@@ -1,6 +1,4 @@
 from pathlib import Path
-from functools import reduce
-from pprint import pprint
 
 cwd = Path.cwd()
 input_path = cwd / "Inputs"
@@ -26,7 +24,7 @@ def part1(fish,days):
 
 
 # print(part1(fish,80))
-
+# par1 is memory intensive
 def growth(fish,days):
     current_fish = fish.copy()
     status = [fish.count(k) for k in range(9)]
